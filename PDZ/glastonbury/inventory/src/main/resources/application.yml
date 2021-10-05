@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:inventory
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  kafka:
+    consumer:
+      group-id: "inventory-group-id"
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092

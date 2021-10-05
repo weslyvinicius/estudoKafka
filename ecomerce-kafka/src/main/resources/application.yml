@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ecomerce
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      acks: all
+    consumer:
+      bootstrap-servers: localhost:9092
+      max-poll-records: 1
+
+
+
